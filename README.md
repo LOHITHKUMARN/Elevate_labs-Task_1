@@ -18,8 +18,8 @@ Cleaning Procedures:
 
 4.Data Type Verification: Ensured each column had the appropriate data type—numeric for prices and ratings, textual for product names and categories.
 
-### Outcome:
-### A fully cleaned and structured dataset with no missing or duplicate entries, ready for further analysis such as price distribution, discount evaluation, or rating trends.
+#### Outcome:
+#### A fully cleaned and structured dataset with no missing or duplicate entries, ready for further analysis such as price distribution, discount evaluation, or rating trends.
 
 # Netflix Titles Dataset – Data Cleaning Overview
 
@@ -45,5 +45,5 @@ rating → "Not Rated"
 
 5.Text Cleanup: Removed any leading or trailing whitespace from text-based fields to eliminate formatting inconsistencies.
 
-### Final Output:
-### A refined and analysis-ready dataset (netflix_titles_cleaned.xlsx), suitable for visualizations, content analysis, or integration into recommendation systems.
+#### Final Output:
+#### A refined and analysis-ready dataset (netflix_titles_cleaned.xlsx), suitable for visualizations, content analysis, or integration into recommendation systems.
