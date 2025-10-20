@@ -1,30 +1,49 @@
-# Data Cleaning (Amazon Dataset)
+Amazon Product Dataset – Data Cleaning Summary
 
-**Tool Used:** Microsoft Excel
-
-### Cleaning Steps:
-1. Removed duplicate rows.
-2. Deleted 2 rows with missing `rating_count`.
-3. Removed ₹, %, and commas from numeric columns.
-4. Converted `actual_price`, `discounted_price`, and `rating` to numeric type.
-5. Standardized column names to lowercase with underscores.
-6. Verified numeric and text data types.
-
-### Final Output:
-Cleaned dataset with consistent formatting and no missing or duplicate entries.
-
-Netflix Titles Datase – Data Cleaning
 Tool Used: Microsoft Excel
 
-Steps Performed
-Removed Duplicates – Eliminated repeated records to ensure data uniqueness.
-Handled Missing Values – Filled missing values appropriately:
-director, country, date_added, duration → Unknown
-cast → Not Available
-rating → Not Rated
-Standardized Column Names – Converted all headers to lowercase and replaced spaces with underscores.
-Fixed Date Formats – Converted date_added column into a consistent DD-MM-YYYY format.
-Trimmed Extra Spaces – Removed leading/trailing spaces from all text fields for cleaner representation.
-Final Output
-Cleaned dataset: netflix_titles_cleaned.xlsx
-Ready for data visualization, trend analysis, or further preprocessing.
+Cleaning Procedures:
+
+Duplicate Removal: Identified and removed redundant rows to ensure data integrity.
+
+Handling Missing Values: Two records with missing rating_count were removed, as they lacked sufficient information for analysis.
+
+Data Normalization:
+
+Stripped currency symbols (₹), commas, and percentage signs (%) from numeric fields for consistency.
+
+Converted actual_price, discounted_price, and rating columns to proper numeric data types to enable calculations and comparisons.
+
+Column Standardization: Renamed all column headers using lowercase letters and underscores for consistency (camelCase or space-separated names were avoided).
+
+Data Type Verification: Ensured each column had the appropriate data type—numeric for prices and ratings, textual for product names and categories.
+
+Outcome:
+A fully cleaned and structured dataset with no missing or duplicate entries, ready for further analysis such as price distribution, discount evaluation, or rating trends.
+
+Netflix Titles Dataset – Data Cleaning Overview
+
+Tool Used: Microsoft Excel
+
+Steps Taken:
+
+Duplicate Elimination: Removed repeated entries to maintain a clean, unique dataset.
+
+Imputation of Missing Data:
+
+Filled missing values in key columns with standardized placeholders:
+
+director, country, date_added, duration → "Unknown"
+
+cast → "Not Available"
+
+rating → "Not Rated"
+
+Header Formatting: Standardized column names by converting all to lowercase and replacing spaces with underscores for compatibility in analysis tools.
+
+Date Standardization: Re-formatted the date_added column uniformly to the DD-MM-YYYY format for consistency and ease of filtering.
+
+Text Cleanup: Removed any leading or trailing whitespace from text-based fields to eliminate formatting inconsistencies.
+
+Final Output:
+A refined and analysis-ready dataset (netflix_titles_cleaned.xlsx), suitable for visualizations, content analysis, or integration into recommendation systems.
